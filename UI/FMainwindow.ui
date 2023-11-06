@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mainwindow</class>
+ <widget class="QMainWindow" name="Mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1127</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Đồ Án Bảo Mật Hệ Thống Thông Tin</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>tainguyen/logo.ico</normaloff>tainguyen/logo.ico</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+color:black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F6BE5E, stop:0.25 #F8C976, stop:0.5 #FAD794, stop:0.75 #FCE3B4, stop:1 #FDF1D4);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QLabel" name="H1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>841</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>26</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 22px;
+font: 75 26pt &quot;Tahoma&quot;;
+border: 3px solid #0099FF;
+
+border-radius: 20px;
+color:black;
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>CÁC THUẬT TOÁN MÃ HÓA CỔ ĐIỂN</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 3px solid #0099FF;
+font: 16pt &quot;Montserrat&quot;;
+border-radius:20px;
+</string>
+    </property>
+    <property name="text">
+     <string>Kỹ Thuật 
+Thay Thế</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_Ceasar">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>170</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>16</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Ceasar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_Vignere">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>170</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Vigenere</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_Trithemius">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>170</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Trithemius</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_Belasco">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>170</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Belasco</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>450</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Montserrat&quot;;
+border-radius:20px;
+border: 3px solid #0099FF;
+</string>
+    </property>
+    <property name="text">
+     <string>Kỹ Thuật 
+Chuyển Vị</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_01dong">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>310</y>
+      <width>411</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Chuyển Vị 1 Dòng</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_nhieudong">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>310</y>
+      <width>411</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Chuyển Vị Nhiều Dòng</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_XORVignere">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>450</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Vigenere</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_XORBelasco">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>450</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Belasco</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_XORTrithemius">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>450</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Trithemius</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_XORCeasar">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>450</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+	border: 3px solid #0099FF  ;
+    color:black ;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Ceasar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 3px solid #0099FF;
+border-radius:20px;
+font: 16pt &quot;Montserrat&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Kỹ Thuật 
+XOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>580</y>
+      <width>1071</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 3px solid #0099FF;
+font: 15pt &quot;Montserrat&quot;;</string>
+    </property>
+    <property name="text">
+     <string>The System Will Be Upgrated More In The Next Time, Thank You &lt;3
+ Lắng nghe giúp chúng tôi hoàn thiện hơn trinhthanhthien@thien323.top</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>Btn_Ceasar</zorder>
+   <zorder>H1</zorder>
+   <zorder>label_2</zorder>
+   <zorder>Btn_Vignere</zorder>
+   <zorder>Btn_Trithemius</zorder>
+   <zorder>Btn_Belasco</zorder>
+   <zorder>label_3</zorder>
+   <zorder>Btn_01dong</zorder>
+   <zorder>Btn_nhieudong</zorder>
+   <zorder>Btn_XORVignere</zorder>
+   <zorder>Btn_XORBelasco</zorder>
+   <zorder>Btn_XORTrithemius</zorder>
+   <zorder>Btn_XORCeasar</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1127</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;
+color: black;</string>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionChuy_n_V">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Chuyển Vị</string>
+   </property>
+  </action>
+  <action name="actionThay_Th">
+   <property name="text">
+    <string>Thay Thế</string>
+   </property>
+  </action>
+  <action name="actionXOR">
+   <property name="text">
+    <string>XOR</string>
+   </property>
+  </action>
+  <action name="actionTho_t">
+   <property name="text">
+    <string>Thoát</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionWebsite">
+   <property name="text">
+    <string>Website</string>
+   </property>
+  </action>
+  <action name="actionAbout_us">
+   <property name="text">
+    <string>About us</string>
+   </property>
+  </action>
+  <action name="actionSave_2">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionTho_t_2">
+   <property name="text">
+    <string>Thoát</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

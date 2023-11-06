@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Trithemiusform</class>
+ <widget class="QMainWindow" name="Trithemiusform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1086</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WTrithemius</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>tainguyen/logo.ico</normaloff>tainguyen/logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+color:black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #F6BE5E, stop:0.25 #F8C976, stop:0.5 #FAD794, stop:0.75 #FCE3B4, stop:1 #FDF1D4);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>741</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>33</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px;
+font: 75 33pt &quot;Montserrat&quot;;
+
+border: 3px solid #0099FF;
+border-radius: 20px;
+color:black;
+
+</string>
+    </property>
+    <property name="text">
+     <string>MÃ HÓA TRITHEMIUS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_ReadFile">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>150</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+    border-color:#0099FF ;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Đọc File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_MaHoa">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>240</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+    border-color:#0099FF ;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Mã hóa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_GiaiMa">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>340</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+    border-color:#0099FF ;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Giải mã</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbPath">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>811</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bebas Neue</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white;
+border-radius:20px;
+color:black;
+font: 12pt &quot;Bebas Neue&quot;;
+border: 3px solid #FF9933;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="maxLength">
+     <number>32782</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tbNoiDung">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>811</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bebas Neue</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    font: 12pt &quot;Bebas Neue&quot;;
+    border-radius: 20px;
+    color: black;
+    border: 3px solid #FF9933;
+}
+</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Bebas Neue'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tbKetQua">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>811</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bebas Neue</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    font: 12pt &quot;Bebas Neue&quot;;
+    border-radius: 20px;
+    color: black;
+    border: 3px solid #FF9933;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_Clear">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>550</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+    border-color:#0099FF ;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_WriteFile">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>650</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px;
+    background-color: #0099FF;
+    border: 3px solid #FF9933;
+    font: 75 16pt &quot;Montserrat&quot;;
+}
+
+QPushButton:hover {
+    background-color: white;
+    border-color:#0099FF ;
+    color: black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Export</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tbKey">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>811</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bebas Neue</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#DBDDDA;
+border-radius:20px;
+color:black;
+font: 12pt &quot;Bebas Neue&quot;;
+border: 3px solid #FF9933;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="maxLength">
+     <number>32782</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>440</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+background-color:#006BB2;
+border: 3px solid #FF9933;
+font: 75 16pt &quot;Montserrat&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Key</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1086</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+    background-color: #F0F0F0;
+    font: bold 12px;
+}
+
+QMenuBar::item {
+    spacing: 3px;
+    padding: 2px 10px;
+    background-color: #F0F0F0;
+    color: black;
+    border-radius: 5px;
+}
+
+QMenuBar::item:selected {
+    background-color: #0099FF;
+    color: white;
+    border-radius: 5px;
+}
+
+QMenuBar::item:hover {
+    background-color: white;
+}
+</string>
+   </property>
+   <widget class="QMenu" name="menuM_h_a">
+    <property name="title">
+     <string>Mã hóa</string>
+    </property>
+    <widget class="QMenu" name="menuThayThe">
+     <property name="title">
+      <string>Thay Thế</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../tainguyen/encrypt.png</normaloff>../tainguyen/encrypt.png</iconset>
+     </property>
+     <addaction name="actionCeasar"/>
+     <addaction name="separator"/>
+     <addaction name="actionVignere"/>
+     <addaction name="separator"/>
+     <addaction name="actionBelasco"/>
+    </widget>
+    <widget class="QMenu" name="menuChuyenVi">
+     <property name="title">
+      <string>Chuyển Vị</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../tainguyen/encrypt.png</normaloff>../tainguyen/encrypt.png</iconset>
+     </property>
+     <addaction name="actionMotdong"/>
+     <addaction name="separator"/>
+     <addaction name="actionNhieudong"/>
+    </widget>
+    <widget class="QMenu" name="menuXOR">
+     <property name="title">
+      <string>XOR</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../tainguyen/encrypt.png</normaloff>../tainguyen/encrypt.png</iconset>
+     </property>
+     <addaction name="actionXOR_Ceasar"/>
+     <addaction name="separator"/>
+     <addaction name="actionXOR_Vignere"/>
+     <addaction name="separator"/>
+     <addaction name="actionXOR_Trithemius"/>
+     <addaction name="separator"/>
+     <addaction name="actionXOR_Belasco"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuThayThe"/>
+    <addaction name="menuChuyenVi"/>
+    <addaction name="separator"/>
+    <addaction name="menuXOR"/>
+   </widget>
+   <widget class="QMenu" name="menuT_p">
+    <property name="title">
+     <string>Tệp</string>
+    </property>
+    <addaction name="menuOpen"/>
+    <addaction name="separator"/>
+    <addaction name="menuSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionTho_t"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="menuWebsite"/>
+    <addaction name="separator"/>
+    <addaction name="menuAbout"/>
+   </widget>
+   <addaction name="menuT_p"/>
+   <addaction name="menuM_h_a"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menuExit">
+   <property name="text">
+    <string>Thoát</string>
+   </property>
+  </action>
+  <action name="menuOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/openfile.png</normaloff>../tainguyen/openfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="menuSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/save.png</normaloff>../tainguyen/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="menuWebsite">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/global.png</normaloff>../tainguyen/global.png</iconset>
+   </property>
+   <property name="text">
+    <string>Website</string>
+   </property>
+  </action>
+  <action name="menuAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/aboutus.png</normaloff>../tainguyen/aboutus.png</iconset>
+   </property>
+   <property name="text">
+    <string>About us</string>
+   </property>
+  </action>
+  <action name="actionCeasar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/encrypt1.png</normaloff>../tainguyen/encrypt1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ceasar</string>
+   </property>
+  </action>
+  <action name="actionVignere">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/encrypt1.png</normaloff>../tainguyen/encrypt1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Vigenere</string>
+   </property>
+  </action>
+  <action name="actionBelasco">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/encrypt1.png</normaloff>../tainguyen/encrypt1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Belasco</string>
+   </property>
+  </action>
+  <action name="actionMotdong">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/Arrow1.png</normaloff>../tainguyen/Arrow1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trên 01 Dòng</string>
+   </property>
+  </action>
+  <action name="actionNhieudong">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/Arrow1.png</normaloff>../tainguyen/Arrow1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trên Nhiều  Dòng</string>
+   </property>
+  </action>
+  <action name="actionXOR_Ceasar">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/xor.png</normaloff>../tainguyen/xor.png</iconset>
+   </property>
+   <property name="text">
+    <string>XOR Ceasar</string>
+   </property>
+  </action>
+  <action name="actionXOR_Vignere">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/xor.png</normaloff>../tainguyen/xor.png</iconset>
+   </property>
+   <property name="text">
+    <string>XOR Vignere</string>
+   </property>
+  </action>
+  <action name="actionXOR_Trithemius">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/xor.png</normaloff>../tainguyen/xor.png</iconset>
+   </property>
+   <property name="text">
+    <string>XOR Trithemius</string>
+   </property>
+  </action>
+  <action name="actionXOR_Belasco">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/xor.png</normaloff>../tainguyen/xor.png</iconset>
+   </property>
+   <property name="text">
+    <string>XOR Belasco</string>
+   </property>
+  </action>
+  <action name="actionTho_t">
+   <property name="icon">
+    <iconset>
+     <normaloff>../tainguyen/exit.png</normaloff>../tainguyen/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thoát</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

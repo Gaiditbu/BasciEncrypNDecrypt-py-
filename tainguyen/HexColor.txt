@@ -1,0 +1,10 @@
+DBDDDA
+006BB2
+
+ if c!= ' ':
+                so = ord(c) - ord('!')
+                so = (so - self.key + 65500)%65500
+                if chr(so+ord('!')) == '￦':
+                    self.p = self.p + ('\n')
+                else:
+                    self.p = self.p + chr(so+ord('!'))
